@@ -1,4 +1,4 @@
-generic makes more easyer code structures for principals. 😏
+viewser makes more easyer code structures then all class base view for principals. 😏
 
 একই নাম এর একাধিক class এ mixins বা generic_view ব্যবহার করা যায় না। তাই DRF এ `viewSets` ব্যবহার করা হয়।
 
@@ -16,7 +16,7 @@ views.py configure as:
 
 -   viewsets.ViewSet call করলে list(), create(), retrieve(), update(), delete() এই সব function customly নিজে নিজে করতে হয়।
 -   অথবা viewset.ModelViewSet call করলে automatic list(), create(), retrieve(), update(), delete() এই সব function execute করা যায়।
--   viewset.ReadOnlyModelViewSet ব্যবহার করে non-id or id base operation এর list() function execute করা যায়। 
+-   viewset.ReadOnlyModelViewSet ব্যবহার করে non-id or id base operation এর list() function execute করা যায়।
 
 urls.py এর configuration different:
 
