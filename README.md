@@ -1,21 +1,15 @@
-mixin simplify our work and implement as dry(don't repeate yourself) principals. 😏
+generic makes more easyer code structures for principals. 😏
 
-Mixins:
+#### Generics
 
-    ListModelMixin
-    CreateModelMixin
-    RetrieveModelMixin
-    UpdateModelMixin
-    DestroyModelMixin
+    CreateAPIView
+    ListAPIView
+    RetreiveAPIView
+    DestroyAPIView
+    UpdateAPIView
 
+    ListCreateAPIView________________________________________all non-id based operations
 
-Mixin provided us
-
-| Action methods | mixin Classes      | Handler Methods |
-|----------------|--------------------|-----------------|
-| list()         | ListModelMixin     | get()           |
-| create()       | CreateModelMixin   | post()          |
-| retrieve()     | RetrieveModelMixin | get()           |
-| update()       | UpdateModelMixin   | put()           |
-| destroy()      | DestroyModelMixin  | delete()        |
-
+    RetreiveUpdateAPIView
+    RetreiveDestroyAPIView
+    RetreiveUpdateDestroyAPIView ____________________________all id based operations
