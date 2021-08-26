@@ -1,20 +1,16 @@
 from cbvApp.models import Student
 from cbvApp.serializers import StudentSerializer
 
-from rest_framework import generics
-
+from rest_framework import viewsets
 
 # just call and use handler method
-
-# non-primery key based operations
-class StudentList(generics.ListCreateAPIView):
+class StudentViewSet(viewsets.ModelViewSet):
     queryset = Student.objects.all()
-    serializer_class= StudentSerializer
+    serializer_class = StudentSerializer
 
 
-# primery key based operations
-class StudentDetail(generics.RetrieveUpdateDestroyAPIView):
+class StudentReadOnlyViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = Student.objects.all()
-    serializer_class= StudentSerializer
+    serializer_class = StudentSerializer
 
 
