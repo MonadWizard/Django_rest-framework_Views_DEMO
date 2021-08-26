@@ -1,5 +1,7 @@
 generic makes more easyer code structures for principals. 😏
 
+একই নাম এর ২টা class এ 
+
 #### Generics
 
     CreateAPIView
