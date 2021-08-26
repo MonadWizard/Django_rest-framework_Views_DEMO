@@ -2,8 +2,9 @@
 .idea
 env/
 
+source/
 functionBaseViewsProject/
 classBaseViewsProject/
-source/
 
+mixins/
 
